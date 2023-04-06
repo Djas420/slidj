@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SliDj</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/slidj.css">
+</head>
+
+<body>
+
+  <main class="main">
+    <div class="row-slider">
+      <button type="button" class="row-slider__btn prev hidden">
+        <svg class="row-slider__btn-svg prev">
+          <use xlink:href="icons/sprite.svg#prev"></use>
+        </svg>
+      </button>
+      <div class="row-slider__list">
+        <div class="row-slider__item">1</div>
+        <div class="row-slider__item">2</div>
+        <div class="row-slider__item">3</div>
+        <div class="row-slider__item">4</div>
+        <div class="row-slider__item">5</div>
+        <div class="row-slider__item">6</div>
+        <div class="row-slider__item">7</div>
+        <div class="row-slider__item">8</div>
+      </div>
+      <button type="button" class="row-slider__btn next hidden">
+        <svg class="row-slider__btn-svg next">
+          <use xlink:href="icons/sprite.svg#next"></use>
+        </svg>
+      </button>
+    </div>
+  </main>
+</body>
+
+<script src="js/slidj.js"></script>
+<script>
+  const slider = new Slidj();
+  slider.init();
+</script>
+
+</html>

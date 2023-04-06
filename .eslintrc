@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "window": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb"
+  ],
+  "plugins": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+	"ignorePatterns": ["**/*.min.js"],
+  "rules": {
+    "camelcase": [2, {"properties": "always"}],
+    "no-console": "off",
+		"quotes": ["warn", "single"],
+    "no-param-reassign": ["error", { "props": false }],
+    "func-names": ["error", "never"],
+    "no-underscore-dangle": ["error", "never"]
+  }
+}
