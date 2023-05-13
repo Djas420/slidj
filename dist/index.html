@@ -16,14 +16,14 @@
     <div class="row-slider">
       <button type="button" class="row-slider__btn prev hidden">
         <svg class="row-slider__btn-svg prev">
-          <use xlink:href="icons/sprite.svg#prev"></use>
+          <use xlink:href="icons/sprite.svg#slidj-prev"></use>
         </svg>
       </button>
       <div class="row-slider__list">
         <div class="row-slider__item">1</div>
         <div class="row-slider__item">2</div>
         <div class="row-slider__item">3</div>
-        <div class="row-slider__item">4</div>
+        <div class="row-slider__item center">4</div>
         <div class="row-slider__item">5</div>
         <div class="row-slider__item">6</div>
         <div class="row-slider__item">7</div>
@@ -31,7 +31,7 @@
       </div>
       <button type="button" class="row-slider__btn next hidden">
         <svg class="row-slider__btn-svg next">
-          <use xlink:href="icons/sprite.svg#next"></use>
+          <use xlink:href="icons/sprite.svg#slidj-next"></use>
         </svg>
       </button>
     </div>
@@ -40,7 +40,9 @@
 
 <script src="js/slidj.js"></script>
 <script>
-  const slider = new Slidj();
+  const slider = new Slidj({
+    center: 'center' // Class name
+  });
   slider.init();
 </script>
 

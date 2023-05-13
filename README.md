@@ -52,12 +52,13 @@ slider.init();
 ## Options
 
 ```js
-const slider = new Slidj(
-   // Default Options
-  'row-slider__list', // Class name slider list
-  'row-slider__item', // Class name slider item
-  'row-slider__btn', // Class name slider btn
-);
+const slider = new Slidj({
+  // Default Options
+  sliderList: 'row-slider__list', // Class name slider list
+  sliderItem: 'row-slider__item', // Class name slider item
+  sliderBtn: 'row-slider__btn', // Class name slider btn
+  center: 'center' // Class name slid center
+});
 slider.init();
 ```
 
@@ -71,12 +72,15 @@ http-server dist
 ## Download
 
 NPM
+
 npm i @djas420/slidj
 
 GitLab
+
 git clone <https://gitlab.com/Djas420/slidj.git>
 
 GitHub
+
 git clone <https://github.com/Djas420/slidj.git>
 
 ## For designers
